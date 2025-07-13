@@ -26,22 +26,12 @@
     }
 
     .container {
-      max-width: 500px;
-      margin: 20px auto 80px; /* espaço para o rodapé flutuante */
+      max-width: 600px;
+      margin: 20px auto 80px;
       padding: 10px;
       background-color: #f7f9fc;
       border-radius: 12px;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    .medalha {
-      font-size: 1.2em;
-      margin: 10px 0;
-      padding: 10px;
-      background-color: #ffffff;
-      border-radius: 8px;
-      text-align: center;
-      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
     }
 
     .trofeu {
@@ -55,9 +45,37 @@
     }
 
     .finalistas {
-      margin-top: 20px;
+      margin-top: 10px;
       text-align: center;
       font-size: 1.1em;
+      font-weight: bold;
+    }
+
+    .ranking {
+      margin-top: 30px;
+    }
+
+    .ranking h2 {
+      text-align: center;
+      font-size: 1.3em;
+      color: #002e6e;
+      margin-bottom: 10px;
+    }
+
+    .item {
+      padding: 6px 10px;
+      margin: 4px 0;
+      background-color: #ffffff;
+      border-radius: 6px;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+    }
+
+    .item:nth-child(odd) {
+      background-color: #f0f4fa;
+    }
+
+    .item strong {
+      font-weight: bold;
     }
 
     @media (max-width: 500px) {
@@ -65,13 +83,8 @@
         font-size: 1.2em;
       }
 
-      .medalha, .trofeu, .finalistas {
-        font-size: 1em;
-      }
-
-      .rodape-flutuante {
-        font-size: 0.8em;
-        padding: 8px 12px;
+      .trofeu, .finalistas, .ranking h2, .item {
+        font-size: 0.95em;
       }
     }
   </style>
@@ -82,14 +95,69 @@
   </header>
 
   <div class="container">
-    <div class="medalha">🥇 <strong>primeiro</strong> — 12 acertos</div>
-    <div class="medalha">🥈 <strong>segundo</strong> — 10 acertos</div>
-    <div class="medalha">🥉 <strong>terceiro</strong> — 8 acertos</div>
+    <div class="trofeu">🏆 Campeão: 🇫🇷 <strong>Paris Saint-Germain</strong></div>
+    <div class="finalistas">Chelsea 🇬🇧 <strong>vs</strong> 🇫🇷 Paris Saint-Germain</div>
 
-    <div class="trofeu">🏆 Campeão: 🇧🇷 <strong>Botafogo</strong></div>
+    <div class="ranking">
+      <h2>🏆 Ranking final das Enquetes - Mundial de Clubes 2025 🌍</h2>
 
-    <div class="finalistas">🇧🇷 Botafogo <strong>1x0</strong> 🇪🇸 Real Madrid</div>
+      <div class="item">#1 - 🥇 <strong>Gadelha</strong> - 18 acertos</div>
+      <div class="item">#2 - 🥈 <strong>Cabral</strong> - 16 acertos</div>
+      <div class="item">#3 - 🥉 <strong>Ruama</strong> - 14 acertos</div>
+      <div class="item">#3 - 🥉 <strong>Gilson</strong> - 14 acertos</div>
+      <div class="item">#4 - <strong>Helo</strong> - 13 acertos</div>
+      <div class="item">#4 - <strong>Carlinhos</strong> - 13 acertos</div>
+      <div class="item">#4 - <strong>Rafael Bacci</strong> - 13 acertos</div>
+      <div class="item">#5 - <strong>Geremias</strong> - 12 acertos</div>
+      <div class="item">#5 - <strong>Winter</strong> - 12 acertos</div>
+      <div class="item">#6 - <strong>Pedro Henrique</strong> - 11 acertos</div>
+      <div class="item">#7 - <strong>Stringher</strong> - 9 acertos</div>
+      <div class="item">#7 - <strong>Ryan</strong> - 9 acertos</div>
+      <div class="item">#8 - <strong>Mendes</strong> - 7 acertos</div>
+      <div class="item">#9 - <strong>Castrão (Gui)</strong> - 6 acertos</div>
+      <div class="item">#10 - <strong>Sidney</strong> - 3 acertos</div>
+      <div class="item">#10 - <strong>Marcos Silva</strong> - 3 acertos</div>
+      <div class="item">#11 - <strong>Vieira</strong> - 2 acertos</div>
+      <div class="item">#11 - <strong>Casaroti</strong> - 2 acertos</div>
+      <div class="item">#11 - <strong>Rodolfo</strong> - 2 acertos</div>
+      <div class="item">#11 - <strong>Regina</strong> - 2 acertos</div>
+
+      <!-- 1 acerto -->
+      <div class="item">#12 - <strong>Fernando</strong> - 1 acerto</div>
+      <div class="item">#12 - <strong>Sobral</strong> - 1 acerto</div>
+      <div class="item">#12 - <strong>Pedro Gabriel</strong> - 1 acerto</div>
+      <div class="item">#12 - <strong>Robinho</strong> - 1 acerto</div>
+      <div class="item">#12 - <strong>Mota</strong> - 1 acerto</div>
+      <div class="item">#12 - <strong>Stephanie</strong> - 1 acerto</div>
+      <div class="item">#12 - <strong>Lincoln</strong> - 1 acerto</div>
+      <div class="item">#12 - <strong>Geovana</strong> - 1 acerto</div>
+      <div class="item">#12 - <strong>Wellington</strong> - 1 acerto</div>
+      <div class="item">#12 - <strong>Alex AJC</strong> - 1 acerto</div>
+      <div class="item">#12 - <strong>Tenório</strong> - 1 acerto</div>
+      <div class="item">#12 - <strong>Zuleide</strong> - 1 acerto</div>
+      <div class="item">#12 - <strong>Kadesh</strong> - 1 acerto</div>
+      <div class="item">#12 - <strong>Borges</strong> - 1 acerto</div>
+      <div class="item">#12 - <strong>Aguiar</strong> - 1 acerto</div>
+      <div class="item">#12 - <strong>Maicon MD</strong> - 1 acerto</div>
+      <div class="item">#12 - <strong>Oliveira</strong> - 1 acerto</div>
+
+      <!-- 0 acertos -->
+      <div class="item">#13 - 🔦 <strong>Ruan</strong> - 0 acertos</div>
+      <div class="item">#13 - 🔦 <strong>Jair</strong> - 0 acertos</div>
+      <div class="item">#13 - 🔦 <strong>Bruno</strong> - 0 acertos</div>
+      <div class="item">#13 - 🔦 <strong>Carlos Santiago</strong> - 0 acertos</div>
+      <div class="item">#13 - 🔦 <strong>Daniel</strong> - 0 acertos</div>
+      <div class="item">#13 - 🔦 <strong>Henrique</strong> - 0 acertos</div>
+      <div class="item">#13 - 🔦 <strong>Bruna Sartori</strong> - 0 acertos</div>
+      <div class="item">#13 - 🔦 <strong>Silva</strong> - 0 acertos</div>
+      <div class="item">#13 - 🔦 <strong>Cardoso</strong> - 0 acertos</div>
+      <div class="item">#13 - 🔦 <strong>Chicão</strong> - 0 acertos</div>
+      <div class="item">#13 - 🔦 <strong>Mendonça</strong> - 0 acertos</div>
+      <div class="item">#13 - 🔦 <strong>Rocha</strong> - 0 acertos</div>
+      <div class="item">#13 - 🔦 <strong>Mirarch</strong> - 0 acertos</div>
+      <div class="item">#13 - 🔦 <strong>Derick</strong> - 0 acertos</div>
+      <div class="item">#13 - 🔦 <strong>Arruda</strong> - 0 acertos</div>
+    </div>
   </div>
-
 </body>
-</html>
+                                </html>
